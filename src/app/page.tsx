@@ -12,7 +12,7 @@ const revealCheck = [
 const Home = () => {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
-      <div className="mb-4 text-3xl font-bold">
+      <div className="mb-4 md:text-3xl font-bold">
         🌸🌸🌸 세실리에 반센 X 아식스 🌸🌸🌸
       </div>
       <div className="grid grid-cols-2">
