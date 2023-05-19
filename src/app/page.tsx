@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const revealCheck = [
-  { id: 1, format: "jpg", isRevealed: false },
+  { id: 1, format: "jpg", isRevealed: true },
   { id: 2, format: "png", isRevealed: false },
   { id: 3, format: "png", isRevealed: true },
   { id: 4, format: "png", isRevealed: false },
