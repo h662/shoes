@@ -6,7 +6,7 @@ const revealCheck = [
   { id: 3, format: "png", isRevealed: true },
   { id: 4, format: "png", isRevealed: false },
   { id: 5, format: "png", isRevealed: true },
-  { id: 6, format: "png", isRevealed: false },
+  { id: 6, format: "png", isRevealed: true },
 ];
 
 const Home = () => {
