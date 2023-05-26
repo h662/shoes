@@ -52,7 +52,11 @@ const Home = () => {
       </div>
       <div>
         <button
-          className="border-4 border-pink-500 px-4 py-2 mb-4 rounded-2xl text-pink-500 font-bold text-2xl bg-pink-100 hover:border-pink-200 hover:text-pink-200 hover:bg-gray-100"
+          className={`border-4 px-4 py-2 mb-4 rounded-2xl font-bold text-2xl ${
+            toggle
+              ? "text-pink-200 bg-gray-100 border-pink-200"
+              : "border-pink-500 text-pink-500 bg-pink-100"
+          }`}
           onClick={onClickButton}
           onMouseEnter={onEnterButton}
           onMouseLeave={onLeaveButton}
