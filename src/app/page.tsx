@@ -30,6 +30,8 @@ const Home = () => {
       confettiRadius: 5,
       confettiNumber: 500,
     });
+
+    setToggle(false);
   };
 
   const onEnterButton = () => {
