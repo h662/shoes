@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import JSConfetti from "js-confetti";
-import { useState } from "react";
-
-const jsConfetti = new JSConfetti();
+import { useState, useEffect } from "react";
 
 const revealCheck = [
   { id: 1, format: "jpg", isRevealed: true },
@@ -17,6 +15,7 @@ const revealCheck = [
 
 const Home = () => {
   const [toggle, setToggle] = useState(false);
+  const [jsConfetti, setJsConfetti] = useState<JSConfetti>();
 
   const onClickButton = () => {
     jsConfetti?.addConfetti({
@@ -39,6 +38,10 @@ const Home = () => {
   const onLeaveButton = () => {
     setToggle(false);
   };
+
+  useEffect(() => {
+    setJsConfetti(new JSConfetti());
+  }, []);
 
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
